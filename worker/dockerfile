@@ -1,0 +1,19 @@
+# Dockerfile
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+WORKDIR /source
+
+# Copier les fichiers et restaurer les dépendances
+COPY worker/ ./
+RUN dotnet restore
+RUN dotnet publish -c Release -o /app --no-restore
+
+# Image runtime
+FROM mcr.microsoft.com/dotnet/aspnet:7.0
+WORKDIR /app
+COPY --from=build /app .
+
+# Exposer le port (si nécessaire)
+# EXPOSE 8081
+
+# Commande par défaut
+CMD ["dotnet", "Worker.dll"]

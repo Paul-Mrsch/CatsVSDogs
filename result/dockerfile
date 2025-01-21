@@ -1,0 +1,16 @@
+# Dockerfile
+FROM node:18
+
+# Installer les dépendances
+WORKDIR /app
+COPY result/package*.json ./
+RUN npm install --production
+
+# Copier le code source
+COPY result/ .
+
+# Exposer le port
+EXPOSE 8888
+
+# Commande par défaut
+CMD ["npm", "start"]

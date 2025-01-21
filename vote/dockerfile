@@ -1,0 +1,18 @@
+# Dockerfile
+FROM python:3.11-slim
+
+# Installer les dépendances
+WORKDIR /app
+COPY vote/requirements.txt requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copier le code source
+COPY vote/ .
+
+# Exposer le port
+EXPOSE 8080
+
+# Commande par défaut
+CMD ["python", "app.py"]
+
+LABEL key="value"
