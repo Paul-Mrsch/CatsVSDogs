@@ -1,5 +1,3 @@
-
-
 # **3DOKR Paul et Jimmy Notice Docker Swarm**
 [⬅️Retour](README.md)
 

@@ -16,13 +16,13 @@ Ainsi qu'une partie base de donnée
 ## Lien Documentation
 
 ### Pour la partie Docker-Compose
--[TODO](TODO.md)
+-[Docker-Compose Notice](Notice-Docker-Compose.md)
 
 ### Pour la partie Docker-Swarm
 -[Docker-Swarm Notice](Notice-Docker-Swarm.md)
 
 
-### Structure du projet
+## Structure du projet
 ```
 Projet CATS VSDOGS
 ├── result
@@ -66,9 +66,9 @@ Projet CATS VSDOGS
 ├── .gitignore
 ├── docker-compose.yml
 ├── docker-stack.yml
+├── Notice-Docker-Compose.md
 ├── Notice-Docker-Swarm.md
 ├── README.md
-├── #TODO WIP A SUPP SI BESOIN
 ```
 
 ## Barème
