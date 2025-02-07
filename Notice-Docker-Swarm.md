@@ -1,6 +1,7 @@
 
 
-# **DOKR 3DOKR Paul et Jimmy**
+# **3DOKR Paul et Jimmy Notice Docker Swarm**
+[⬅️Retour](README.md)
 
 ## **Introduction**
 Cette documentation explique les étapes nécessaires pour configurer Docker Swarm sur un cluster de plusieurs nœuds. Elle présente comment initialiser un Swarm sur le premier nœud, ajouter un deuxième nœud, et déployer une stack Docker partagée entre les nœuds tout en garantissant que les services (tels que la base de données) partagent les mêmes ressources.
@@ -17,7 +18,7 @@ Avant de commencer, assurez-vous d’avoir Docker installé sur les deux machine
 docker -v
 ```
 
-Si Docker n'est pas installé, vous pouvez le télécharger et l'installer depuis le site officiel : [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/).
+Si Docker n'est pas installé, vous pouvez le télécharger et l'installer depuis le site officiel : [Lien](https://docs.docker.com/get-docker/).
 
 ---
 
@@ -84,6 +85,8 @@ Maintenant que votre Swarm est configuré avec deux nœuds, vous pouvez déploye
    docker push localhost:5000/result
    ```
 
+   En effect Docker Swarm ne pourra pas build les images donc il faut lui donner un chemin d'accès, on a choisi la possibilité de le faire via un registre mais publier son image sur Docker Hub est aussi une solution possible
+
 2. **Déployer la stack sur le Swarm :**
    Une fois les images prêtes, utilisez `docker stack deploy` pour déployer votre stack sur le Swarm. Le fichier `docker-stack.yml` doit être configuré comme suit :
 
@@ -110,7 +113,7 @@ Docker Swarm permet de modifier facilement le nombre de répliques des services 
 docker service scale catsvsdogs_worker=4
 ```
 
-Cela va automatiquement ajuster le nombre de répliques de `worker` et les distribuer entre les nœuds du Swarm.
+Cela va automatiquement ajuster le nombre de répliques de `worker` et les distribuer entre les nœuds du Swarm. (c'est la scalablilité horizontal possible avec Swarm)
 
 ---
 
@@ -129,6 +132,7 @@ volumes:
 ```
 
 Cela garantit que tous les nœuds accèdent aux mêmes données de base de données.
+En effet sans ça, le deuxième noeuds ne pourras pas avoir accès au  docker volume de la première machine   
 
 ---
 
@@ -149,6 +153,6 @@ Cela vous permettra de suivre les répliques des services et leur état.
 
 Ce guide explique comment configurer Docker Swarm avec deux nœuds et déployer une application multi-services. Avec Swarm, vous bénéficiez d'un mécanisme de gestion des services en haute disponibilité et d'un contrôle simplifié sur la scalabilité de vos services. Vous pouvez facilement ajouter des nœuds supplémentaires et ajuster la capacité de vos services en fonction de l'évolution de la charge.
 
----
-
 Cela vous permettra de gérer efficacement vos environnements de production Docker, tout en maintenant une infrastructure flexible et scalable.
+
+J'espère que vous avez apprécié la lecture ^^
