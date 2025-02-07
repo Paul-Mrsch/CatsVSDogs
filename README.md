@@ -23,8 +23,8 @@ Ainsi qu'une partie base de donnée
 
 
 ### Structure du projet
-
-Projet CATSVSDOGS
+```
+Projet CATS VSDOGS
 ├── result
 │   ├── views
 │   │   ├── stylesheets
@@ -69,7 +69,7 @@ Projet CATSVSDOGS
 ├── Notice-Docker-Swarm.md
 ├── README.md
 ├── #TODO WIP A SUPP SI BESOIN
-
+```
 
 ## Barème
 
