@@ -45,6 +45,12 @@ cd CatsVSDogs
 
 ## Démonstration
 
+<video width="600" controls>
+  <source src="Demo Cats-vs-Dogs.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas la lecture des vidéos.
+</video>
+
+
 Pour une démonstration vidéo de l'application, veuillez consulter [cette vidéo](Demo Cats-vs-Dogs.mp4).
 
 ## Support
