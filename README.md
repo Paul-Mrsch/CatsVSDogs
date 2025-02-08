@@ -21,6 +21,17 @@ Ainsi qu'une partie base de donnée
 ### Pour la partie Docker-Swarm
 -[Docker-Swarm Notice](Notice-Docker-Swarm.md)
 
+### Pour des explications sur les commandes Docker
+-[Docker (Commandes générales)](Notice-Docker.md)
+
+## Pour lancer le projet
+
+Deux options possibe
+* A - [Lire les documentation](#lien-documentation)
+* B les scripts Powershell
+    * s-RunDockerCompose.ps1
+    * S-RunDockerWithSwarm.ps1 
+    * S-FastSwarm.ps1 (⚠️ à utiliser si les images ont déjà été build)
 
 ## Structure du projet
 ```
@@ -64,11 +75,15 @@ Projet CATS VSDOGS
 │   ├── Program.cs
 │   ├── Worker.csproj
 ├── .gitignore
+├── Demo Cats-vs-Dogs.mp4
 ├── docker-compose.yml
 ├── docker-stack.yml
 ├── Notice-Docker-Compose.md
 ├── Notice-Docker-Swarm.md
+├── Notice-Docker.md
 ├── README.md
+├── S-FastSwarm.ps1
+├── S-RunDockerWithSwarm.ps1
 ```
 
 ## Barème
