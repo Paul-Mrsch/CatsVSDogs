@@ -51,6 +51,8 @@ Vous avez 2 sites web :
 
 ## Démonstration
 
-Pour une démonstration vidéo de l'application, veuillez consulter [![VIDEO](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FtkH6rTXplSY)](https://youtu.be/tkH6rTXplSY)
+Pour une démonstration vidéo de l'application, veuillez consulter cette vidéo :
+
+[![VIDEO](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FtkH6rTXplSY)](https://youtu.be/tkH6rTXplSY)
 
 Pour toute question ou problème, veuillez ouvrir une issue sur le dépôt GitHub.
