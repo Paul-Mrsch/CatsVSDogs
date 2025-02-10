@@ -90,9 +90,11 @@ Projet CATS VSDOGS
 ├── Notice-Docker-Compose.md
 ├── Notice-Docker-Swarm.md
 ├── Notice-Docker.md
+├── Notice-Utilisateur.md
 ├── README.md
 ├── S-FastSwarm.ps1
 ├── S-RunDockerWithSwarm.ps1
+├── S-RunDockerCompose.ps1
 ```
 
 ## Barème

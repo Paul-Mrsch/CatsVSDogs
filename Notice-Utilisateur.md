@@ -1,5 +1,7 @@
 # Notice Utilisateur - CatsVSDogs
 
+[⬅️Retour](README.md)
+
 ## Introduction
 
 Bienvenue dans le projet CatsVSDogs. Cette application utilise un modèle de machine learning pour classifier des images de chats et de chiens.
@@ -17,7 +19,6 @@ git clone https://github.com/Paul-Mrsch/CatsVSDogs.git
 2. Accédez au répertoire du projet :
 
 ```bash
-
 cd CatsVSDogs
 
 ```
